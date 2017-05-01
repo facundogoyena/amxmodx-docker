@@ -16,7 +16,6 @@ RUN useradd -m -r -N -d /amxmodx amxmodx
 USER amxmodx
 WORKDIR /amxmodx
 
-RUN wget -q -O- "http://www.amxmodx.org/release/amxmodx-1.8.2-base-linux.tar.gz" | tar xz && \
-    wget -q -O- "http://www.amxmodx.org/release/amxmodx-1.8.2-cstrike-linux.tar.gz" | tar xz
+RUN wget -q -O- "http://www.amxmodx.org/release/amxmodx-1.8.2-base-linux.tar.gz" | tar xz
 
 WORKDIR /amxmodx/addons/amxmodx/
