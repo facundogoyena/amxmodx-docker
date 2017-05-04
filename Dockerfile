@@ -23,4 +23,5 @@ RUN wget -q -O amxx.tar.gz "http://www.amxmodx.org/release/amxmodx-1.8.2-base-li
 RUN echo "\
     #!/bin/bash\n\
     cd /root/\n\
-    ./amxxpc \$1" > /usr/bin/amxxcompiler
+    ./amxxpc \$1" > /usr/bin/amxxcompiler && \
+    chmod +x /usr/bin/amxxcompiler
