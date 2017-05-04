@@ -8,7 +8,8 @@ USER root
 RUN apt-get update -qq && \
     apt-get install -y -qq --no-install-recommends \
     wget \
-    unzip
+    unzip \
+    ca-certificates
 
 # AMX Mod X
 RUN useradd -m -r -N -d /amxmodx amxmodx
